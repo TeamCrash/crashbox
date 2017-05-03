@@ -18,7 +18,7 @@ Pour notre projet de spécialité, nous avons créé un boitier détecteur d'acc
  - ADXL345 : 2€ ([Amazon](https://www.amazon.fr/SODIAL-ADXL345-Digital-Acceleration-dinclinaison/dp/B00KBPR3E0/))
  - Buzzer : < 1€ pièce ([Amazon](https://www.amazon.fr/industrielle-buzzer-dalarme-avertisseur-sonore/dp/B00W8YEG8S/))
  - Ecran LCD : 13€ ([Amazon](https://www.amazon.fr/SunFounder-Serial-Module-Arduino-Mega2560/dp/B01GPUMP9C/))
- - Bouton poussoir : < 0.40€ ([Amazon](https://www.amazon.fr/SODIAL-Bouton-poussoir-commutateur-ronde-rouge/dp/B00F4MGQU2/))
+ - Bouton poussoir : < 0.40€ pièce ([Amazon](https://www.amazon.fr/SODIAL-Bouton-poussoir-commutateur-ronde-rouge/dp/B00F4MGQU2/))
  - Clavier matriciel : 7€ ([Amazon](https://www.amazon.fr/Spiratronics-SM2-012-Clavier-matriciel-3x4/dp/B0093Z58VE))
 
 En plus d'un boitier à 15€, le coût total du projet est donc de 225€.
