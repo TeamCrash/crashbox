@@ -57,4 +57,4 @@ Le bouton # renvoie simplement "#" mais est programmé sous Node pour la validat
 ## Licence
 
 Nous mettons à votre disposition les trois codes source sous licence GNU GPLv3.
-Ces programmes utilisent des librairies pour Node et Arduino sous licence GNU LGPLv3 et MIT.
+Ces programmes utilisent des librairies pour Node et Arduino sous licence GNU GPL, LGPLv3 et MIT.
