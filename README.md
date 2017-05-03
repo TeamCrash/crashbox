@@ -42,7 +42,7 @@ Pour l'utiliser, il faut avant tout insérer une carte SIM dans le shield et tap
 Pour passer un appel, tapez `call ` suivi du numéro de téléphone.
 Pour envoyer un SMS, tapez `sms` suivi du numéro de téléphone et du message. Gare aux accents.
 
-**ATTENTION : ** Le programme utilise la librairie GSM2, le "2" est important et cette version n'existe plus dans les versions d'Arduino ultérieures à 1.7.11 ! Téléchargez cette version d'Arduino [ici](http://www.arduino.org/previous-releases).
+**ATTENTION :** Le programme utilise la librairie GSM2, le "2" est important et cette version n'existe plus dans les versions d'Arduino ultérieures à 1.7.11 ! Téléchargez cette version d'Arduino [ici](http://www.arduino.org/previous-releases).
 
 Si vous n'utilisez pas la librairie GSM2, l'audio ne fonctionneras pas sur le port jack du shield.
 
