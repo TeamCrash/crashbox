@@ -29,6 +29,8 @@ En plus d'un boitier à 15€, le coût total du projet est donc de 225€.
 Le programme principal codé en NodeJS et executé sur la Pi 3 gère tout.
 Il crée également un serveur web, avec une interface permettant de visualiser tous les capteurs et commander le buzzer, le GSM et l'écran LCD.
 
+![L'interface web](https://cdn.rawgit.com/tianalemesle/crashbox/master/Screen%20Shot%2004-27-17%20at%2001.44%20PM.PNG)
+
 ### Le programme GSM
 
 Le programme GSM codé en C pour la première carte Arduino et son Shield est multifonctions : il permet à la fois de passer de recevoir des appels ainsi que d'envoyer des SMS.
