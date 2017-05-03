@@ -21,7 +21,7 @@ Pour notre projet de spécialité, nous avons créé un boitier détecteur d'acc
  - Bouton poussoir : < 0.40€ pièce ([Amazon](https://www.amazon.fr/SODIAL-Bouton-poussoir-commutateur-ronde-rouge/dp/B00F4MGQU2/))
  - Clavier matriciel : 7€ ([Amazon](https://www.amazon.fr/Spiratronics-SM2-012-Clavier-matriciel-3x4/dp/B0093Z58VE))
 
-En plus d'un boitier à 15€, le coût total du projet est donc de 225€.
+En plus d'un boitier à 15€, le coût total du projet est donc d'environ 225€.
 
 ## Les programmes
 
