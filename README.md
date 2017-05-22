@@ -2,14 +2,16 @@
 
 ## La Team Crash
 
-Nous sommes trois élèves en [Terminale STI2D](http://www.onisep.fr/Choisir-mes-etudes/Au-lycee-au-CFA/Au-lycee-general-et-technologique/Les-bacs-technologiques/Le-bac-STI2D-sciences-et-technologies-de-l-industrie-et-du-developpement-durable) (Sciences et Technologies de l'Industrie et du Développement Durable) option SIN (Systèmes d'Informations et Numériques)
+Nous sommes trois élèves de [Terminale STI2D](http://www.onisep.fr/Choisir-mes-etudes/Au-lycee-au-CFA/Au-lycee-general-et-technologique/Les-bacs-technologiques/Le-bac-STI2D-sciences-et-technologies-de-l-industrie-et-du-developpement-durable) (Sciences et Technologies de l'Industrie et du Développement Durable) option SIN (Systèmes d'Informations et Numériques)
 La Team Crash : [Pierre Grangereau](https://pierre.grangereau.fr/), [Paul Lavergne](https://pghofficiel.wixsite.com/paul-lavergne), [Tiana Lemesle](https://tianalemesle.github.io/).
 
 Pour notre projet de spécialité, nous avons créé un boitier détecteur d'accident « Crash Box ».
 
+![La Crash Box](https://cdn.rawgit.com/TeamCrash/crashbox/master/images/DSC_0083-min.JPG)
+
 ## Les composants
 
-![Schéma fonctionnel](https://cdn.rawgit.com/tianalemesle/crashbox/master/Fonctionnel_v3.1.png)
+![Schéma fonctionnel](https://cdn.rawgit.com/TeamCrash/crashbox/master/Fonctionnel_v3.3.png)
 
  - Raspberry Pi 3 : 40€ ([Amazon](https://www.amazon.fr/Raspberry-Pi-Carte-M%C3%A8re-Model/dp/B01CCOXV34/))
  - Arduino Uno : 20€ ([Site officiel](https://store.arduino.cc/arduino-uno-rev3))
@@ -30,7 +32,7 @@ En plus d'un boitier à 15€, le coût total du projet est donc de moins de 230
 Le programme principal codé en NodeJS et executé sur la Pi 3 gère tout.
 Il crée également un serveur web, avec une interface permettant de visualiser tous les capteurs et commander le buzzer, le GSM et l'écran LCD.
 
-![L'interface web](https://cdn.rawgit.com/tianalemesle/crashbox/master/Screen%20Shot%2004-27-17%20at%2001.44%20PM.PNG)
+![L'interface web](https://cdn.rawgit.com/TeamCrash/crashbox/master/Screen%20Shot%2004-27-17%20at%2001.44%20PM.PNG)
 
 ### Le programme GSM
 
@@ -38,7 +40,7 @@ Le programme GSM codé en C pour la première carte Arduino et son Shield est mu
 
 Pour l'utiliser, il faut avant tout insérer une carte SIM dans le shield et taper le code PIN dans le programme :
 
-![Sens d'insertion de la carte SIM](https://cdn.rawgit.com/tianalemesle/crashbox/master/images/Arduino%20GSM%202.jpg)
+![Sens d'insertion de la carte SIM](https://cdn.rawgit.com/TeamCrash/crashbox/master/images/Arduino%20GSM%202.jpg)
 
     #define PINNUMBER "1234"
 
