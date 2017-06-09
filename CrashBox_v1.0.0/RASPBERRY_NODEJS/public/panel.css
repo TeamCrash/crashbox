@@ -1,0 +1,128 @@
+h1, h2, .gps_frame, #output {
+	text-align: center;
+}
+
+#gps, #gsm, #accel, #lcd, #buzzer {
+	border: 1px solid black;
+	padding: 5px;
+	margin-right: 5px;
+	box-sizing: border-box;
+}
+
+
+.gps_info {
+	padding-left: 25px;
+	padding-right: 25px;
+	height: 420px;
+}
+#map {
+	width: 450px;
+	height: 420px;
+}
+
+.pause {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	margin: 0;
+	padding: 5px;
+	background-color: red;
+	font-weight: bold;
+	display: none;
+}
+
+#options {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	margin: 0;
+	padding: 5px;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+#options .toggleOptions {
+	padding: 5px;
+}
+
+.options {
+	display: inline-block;
+}
+
+.options a {
+	text-decoration: none;
+	padding: 3px;
+}
+
+.options a:hover {
+	background-color: #8E44AD;
+}
+
+.options a:active {
+	background-color: #E74C3C;
+}
+
+#options a {
+	color: white;
+}
+
+#container {
+	padding-bottom: 10px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#output {
+	padding-top: 10px;
+	text-align: center;
+}
+#output .accident {
+	visibility: hidden;
+}
+#output .accident p.alerte,
+#accel .accel_info p.error {
+	display: inline-block;
+	background-color: #C0392B;
+	padding: 5px;
+	font-weight: bold;
+	border: 2px solid #BDC3C7;
+	margin: 0;
+}
+
+.blink {
+	animation: blink 1s step-start 0s infinite;
+}
+@keyframes blink {
+	50% { visibility: hidden; }
+}
+
+a.mapLink {
+	color: white;
+}
+
+.x b, .y b, .z b {
+	padding: 5px;
+}
+
+#accelLimit {
+	width: 35px;
+}
+
+#center0, #center1, #center2, #center3 {
+	text-align: center;
+}
+#right0, #right1, #right2, #right3 {
+	text-align: right;
+}
+
+.screenControl {
+	white-space: nowrap;
+}
+
+.buzzerDisabled {
+	display: none;
+}

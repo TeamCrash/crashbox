@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Raspberry 51 | Panel</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="panel.css">
+		<script src="/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<h1>Panel</h1>
+		<p class="pause">PAUSE</p>
+		<div id="options">
+			<div class="options" style="visibility: hidden;">
+				<a href="#" class="accidentDetected">Accident détecté</a>
+				<a href="history.txt" target="_blank" onclick="document.getElementsByClassName('toggleOptions')[0].click();">Historique</a>
+			</div>
+			<a href="#" class="toggleOptions">Options Avancées</a>
+		</div>
+		<div id="container" style="display: inline-flex;">
+			<div id="accel">
+				<h2>ACCEL</h2>
+				<div class="accel_info">
+					<p class="units"><b>Unité</b> : <span></span></p>
+					<p class="x"><b>X</b> : <span></span></p>
+					<p class="y"><b>Y</b> : <span></span></p>
+					<p class="z"><b>Z</b> : <span></span></p>
+					<p>Limite : <input type="number" id="accelLimit" value="99" min="0"></p>
+					<p class="error"><span class="blink">I/O ERROR</span></p>
+				</div>
+			</div>
+			<div id="gps">
+				<h2>GPS</h2>
+				<h3 class="gps_frame"></h3>
+				<div style="display: inline-flex;">
+					<div class="gps_info">
+						<h3 style="text-decoration: underline;">GPS Info</h3>
+						<p class="time"><b>Heure</b> : <span>N/A</span> (GMT)</p>
+						<p class="status"><b>Statut</b> : <span>N/A</span></p>
+						<p class="latitude_dms"><b>Latitude<br>DMS</b> : <span>N/A</span><br><b>DD</b> : <span class="latitude_dd"></span></p>
+						<p class="longitude_dms"><b>Longitude<br>DMS</b> : <span>N/A</span><br><b>DD</b> : <span class="longitude_dd"></span></p>
+						<p class="speed"><b>Vitesse</b> : <span>N/A</span> noeuds (<span class="speedKmh"></span> km/h)</p>
+						<p class="cmg"><b>Cap</b> : <span>N/A</span>°</p>
+						<p class="fix_date"><b>Fix GPS</b> : <span>N/A</span> (GMT)</p>
+					</div>
+					<div id="map"></div>
+				</div>
+			</div>
+			<div id="gsm">
+				<h2>GSM</h2>
+				<p>N° du Correspondant</p>
+				<input type="text" id="phoneNumber" maxlength="10" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+				<p>SMS</p>
+				<input type="text" id="sms">
+				<p style="text-align: center;"><input type="submit" value="Envoyer" id="send"> <input type="submit" value="Appeler" id="call"></p>
+				<p id="gsmStatus" style="text-align: center;">En attente</p>
+			</div>
+			<div id="lcd">
+				<h2>LCD</h2>
+				<p class="screenControl">
+					L0
+					<span id="l0">
+						<input type="text" id="left0">
+						<input type="text" id="center0">
+						<input type="text" id="right0" disabled>
+					</span>
+					<br>
+					L1
+					<span id="l1">
+						<input type="text" id="left1">
+						<input type="text" id="center1">
+						<input type="text" id="right1" disabled>
+					</span>
+					<br>
+					L2
+					<span id="l2">
+						<input type="text" id="left2">
+						<input type="text" id="center2">
+						<input type="text" id="right2">
+					</span>
+					<br>
+					L3
+					<span id="l3">
+						<input type="text" id="left3">
+						<input type="text" id="center3">
+						<input type="text" id="right3">
+					</span>
+				</p>
+				<p style="text-align: center;">
+					<input type="submit" value="Actualiser" id="refreshScreen">
+					<input type="submit" value="Valider" id="writeScreen">
+				</p>
+			</div>
+			<div id="buzzer">
+				<h2>Buzzer</h2>
+				<p style="text-align: center;">
+					<input type="submit" value="ON" id="buzzerON">
+					<br><input type="submit" value="OFF" id="buzzerOFF">
+				</p>
+				<p class="buzzerDisabled"><b>BUZZER DÉSACTIVÉ</b></p>
+			</div>
+		</div>
+		<p style="text-align: center; margin: 0; padding-bottom: 7px;">
+			<code class="prettyprint" style="background-color: white; display: inline; padding: 5px">document.body.innerHTML = "&lt;pre&gt;" + document.body.innerText.split("\n").reverse().join("\n") + "&lt;/pre&gt;";</code>
+		</p>
+		<hr>
+		<div id="output">
+			<div class="accident">
+				<p class="alerte"><span class="blink">ACCIDENT DETECTE</span></p>
+				<p><a target="_blank" class="mapLink">Lien vers la carte</a></p>
+			</div>
+		</div>
+		<div id="footer">
+			<p>&copy; 2016-2017 Team Crash</p>
+		</div>
+		<script defer type="text/javascript" src="panel.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACc_2tYHAIiJL48PXf2IaO6s-wRhVByd4&callback=initMap"></script>
+		<script type="text/javascript" src="accel.js"></script>
+		<script type="text/javascript" src="gps.js"></script>
+		<script type="text/javascript" src="gsm.js"></script>
+		<script type="text/javascript" src="lcd.js"></script>
+		<script type="text/javascript" src="buzzer.js"></script>
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	</body>
+</html>

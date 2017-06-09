@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+	background-color: #3498db;
+	color: white;
+	font-family: "Open Sans";
+}
+#container.home {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	border: 1px solid white;
+	box-shadow: 3px 6px 5px white;
+}
+#container.home ul li a {
+	color: white;
+	text-decoration: none;
+}
+#container.home ul li a:hover {
+	text-decoration: underline;
+}
+#footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}

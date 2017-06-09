@@ -1,0 +1,23 @@
+{
+  "name": "crashbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "adxl345-sensor": "^0.0.8",
+    "ip": "^1.1.5",
+    "pigpio": "^0.5.1",
+    "serialport": "^4.0.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamCrash/crashbox.git"
+  },
+  "author": "Team Crash",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/TeamCrash/crashbox/issues"
+  },
+  "homepage": "https://github.com/TeamCrash/crashbox#readme"
+}
